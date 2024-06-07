@@ -1,0 +1,20 @@
+.modak-regular {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+:root{
+    --cor-de-fundo: #CDE8FD;
+    --botão: radial-gradient(circle at 50% 50%, #FCF498, #FFC23A);
+    --laranja: #FF7828;
+    --branco: #ffffff;
+    --verde: #64AF1E;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: (Modak-regular);
+}
