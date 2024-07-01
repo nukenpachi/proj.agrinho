@@ -28,14 +28,15 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     overflow: hidden;
     background-color: var(--cor-de-fundo);
 }
@@ -90,9 +91,9 @@ body {
 .escolha-vegetais {
     text-align: center;
     padding: 20px;
-    background: url('caminho/para/fundo-de-grama.png') no-repeat center center;
-    background-size: cover;
+    background-color: var(--cor-de-fundo);
     min-height: 400px; /* Ajuste conforme necessário */
+    width: 100%;
     position: relative;
 }
 
@@ -101,8 +102,13 @@ body {
     color: var(--laranja);
     font-size: 36px;
     margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
+}
+
+.fundo-vegetais {
+    background: url('caminho/para/fundo-de-grama.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .vegetais {
@@ -111,7 +117,6 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     position: relative;
-    z-index: 2;
 }
 
 .vegetal {
