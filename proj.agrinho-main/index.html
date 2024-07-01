@@ -4,13 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Agrinho</title>
-    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <section class="conteudo-principal">
-       <h2 class="titulo-principal"></h2>
-        
+        <h2 class="titulo-principal"></h2>
     </section>
+    <div class="container">
+        <img src="fundo.png" alt="fundo nuvem" class="fundo">
+        <div class="conteudo">
+            <img src="grama-cerca.png" alt="grama com cerca" class="grama">
+            <div class="botao">
+                Compre Agora
+            </div>
+        </div>
+    </div>
+
+    <!-- Nova seção -->
+    <section class="escolha-vegetais">
+        <h2>Escolha seus vegetais</h2>
+        <div class="vegetais">
+            <button class="vegetal" data-vegetal="Tomate">
+                <img src="caminho/para/tomate.png" alt="Tomate">
+            </button>
+            <button class="vegetal" data-vegetal="Berinjela">
+                <img src="caminho/para/berinjela.png" alt="Berinjela">
+            </button>
+            <button class="vegetal" data-vegetal="Alface">
+                <img src="caminho/para/alface.png" alt="Alface">
+            </button>
+            <button class="vegetal" data-vegetal="Cenoura">
+                <img src="caminho/para/cenoura.png" alt="Cenoura">
+            </button>
+            <!-- Adicione mais botões conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Modal para adicionar ao carrinho -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"></p>
+            <button id="continuar-comprando">Continuar comprando</button>
+            <button id="finalizar-compra">Finalizar compra</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
